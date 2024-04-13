@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg763p1ppwhqd"]
+
+[ext_resource type="Script" path="res://src/levels/level.gd" id="1_yrqrj"]
+[ext_resource type="PackedScene" uid="uid://cqwy3i70vh31l" path="res://src/actors/actor.tscn" id="2_udx8b"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_yrqrj")
+
+[node name="Actor" parent="." instance=ExtResource("2_udx8b")]
+coords = Vector2i(8, 2)
