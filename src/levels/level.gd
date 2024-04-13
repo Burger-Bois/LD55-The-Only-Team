@@ -16,12 +16,15 @@ func _init():
 
 
 func _ready():
+    # Set actor positions based on coordinates
     for column_i in range(_grid.size()):
         var column = _grid[column_i]
         for row_i in range(column.size()):
             var actor = column[row_i] as Actor
             if is_instance_valid(actor):
-                actor.position = Vector2(column_i, row_i) * Vector2(Constants.CELL_SIZE)
+                actor.position = \
+                        Vector2(column_i, row_i) * Vector2(Constants.CELL_SIZE) \
+                        + Vector2(Constants.CELL_SIZE) / 2
 
 
 func add_actor(coords: Vector2i, actor: Actor):
