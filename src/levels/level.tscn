@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cqwy3i70vh31l" path="res://src/actors/actor.tscn" id="2_udx8b"]
 
 [node name="Level" type="Node2D"]
+process_mode = 1
 script = ExtResource("1_yrqrj")
 
 [node name="Actor" parent="." instance=ExtResource("2_udx8b")]
