@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Constants="*res://src/common/constants.gd"
+Grid="*res://src/common/grid.gd"
 Signals="*res://src/common/signals.gd"
 
 [display]

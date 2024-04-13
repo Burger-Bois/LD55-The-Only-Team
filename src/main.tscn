@@ -13,3 +13,4 @@ level_scene = ExtResource("1_pyfi7")
 
 [node name="UI" parent="UILayer" instance=ExtResource("2_hd2vg")]
 unique_name_in_owner = true
+mouse_filter = 1
