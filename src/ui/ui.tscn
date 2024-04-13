@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dik42atcvjs1l"]
+[gd_scene load_steps=4 format=3 uid="uid://dik42atcvjs1l"]
 
 [ext_resource type="Script" path="res://src/ui/ui.gd" id="1_tfa1r"]
 [ext_resource type="PackedScene" uid="uid://12y2yoyhf4" path="res://src/ui/main_menu.tscn" id="2_e7itr"]
+[ext_resource type="PackedScene" uid="uid://dlpufso2ha56t" path="res://src/ui/pause_menu.tscn" id="3_3xcih"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -14,4 +15,9 @@ script = ExtResource("1_tfa1r")
 
 [node name="MainMenu" parent="." instance=ExtResource("2_e7itr")]
 unique_name_in_owner = true
+layout_mode = 1
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_3xcih")]
+unique_name_in_owner = true
+visible = false
 layout_mode = 1

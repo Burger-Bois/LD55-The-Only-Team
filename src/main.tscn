@@ -5,8 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://dik42atcvjs1l" path="res://src/ui/ui.tscn" id="2_hd2vg"]
 
 [node name="Main" type="Node"]
+process_mode = 3
 script = ExtResource("1_s137c")
 level_scene = ExtResource("1_pyfi7")
 
-[node name="UI" parent="." instance=ExtResource("2_hd2vg")]
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="UILayer" instance=ExtResource("2_hd2vg")]
 unique_name_in_owner = true
